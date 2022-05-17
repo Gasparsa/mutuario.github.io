@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <title>MUTUARIO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+ 
+
+
+</head>
+<body id="topo" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+
+ <div class="jumbotron text-center">
+  <h1>PREFEITURA MUNICIPAL DE CAMPINA GRANDE</h1>
+  <p>CONSULTA SORTEIO ALUÍZIO CAMPOS</p> 
+</div>
+
+
+<div id="consultarCpf" class="container-fluid text-center bg-grey">
+  <h2>CONSULTAR CPF</h2>
+   <div class="row text-center slideanim">
+        <div class="col-xs-12 col-sm-12 col-md-4">
+            <h4>Realize consulta pelo CPF</h4>           
+        </div>    
+
+      <div class="col-xs-12 col-sm-12 col-md-8 form-group">  
+          <form name="formBusca" method="POST" action="../controller/controllerMutuario.php">
+
+                  <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">CPF:</span>
+                     <input class="form-control" type="text" id="nDoc" name="nDoc" placeholder="Só números" onkeyup="mascara('###.###.###-##',this,event,true)" maxlength="14">
+
+                    <div class="input-group-btn">
+                            <input class="btn btn-primary" type="submit" value="Buscar" name="Buscar" />
+                    </div> 
+                  </div>
+                      
+
+
+          </form>
+          
+  
+        </div><!-- fim div col-->
+  </div><!-- fim div row-->
+</div>
+
+<!-- <div id="consultarNome" class="container-fluid text-center bg-grey">
+    <h2>CONSULTAR NOME</h2>
+     <div class="row text-center slideanim">
+          <div class="col-xs-12 col-sm-12 col-md-4">
+              <h4>Realize consulta pelo NOME</h4>           
+          </div>    
+  
+        <div class="col-xs-12 col-sm-12 col-md-8 form-group">  
+            <form name="formBusca" method="POST" action="../controller/controllerMutuario.php">
+  
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">NOME:</span>
+                       <input class="form-control" type="text" id="nDoc" name="nDoc" placeholder="Só números" onkeyup="mascara('###.###.###-##',this,event,true)" maxlength="14">
+  
+                      <div class="input-group-btn">
+                              <input class="btn btn-primary" type="submit" value="Buscar" name="Buscar" />
+                      </div> 
+                    </div>
+                        
+  
+  
+            </form>
+            
+            
+    
+          </div>
+    </div>
+  </div>-->
+  
+
+
+ 
+<script src="../js/javascripty.js"></script>
+<script src="../js/mascara.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+    
+
+
+</script>
+
+</body>
+</html>
